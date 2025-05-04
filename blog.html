@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Beau Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff7f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffe0e5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #e91e63;
+    }
+
+    .blog-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 1rem;
+      flex: 1;
+    }
+
+    .blog-content h3 {
+      margin: 0.5rem 0;
+      color: #e91e63;
+    }
+
+    .blog-content p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: right;
+    }
+
+    .read-more a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .read-more a:hover {
+      color: #c2185b;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #ffd1dc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Glow Beau Blog</h1>
+    <p>Beauty insights, skincare tips & behind-the-scenes from Glow Beau</p>
+  </header>
+
+  <div class="blog-container">
+    <div class="blog-grid">
+
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <img src="https://th.bing.com/th/id/OIP.C21_vAlRhq3xVcK9pNVfDQHaE8?rs=1&pid=ImgDetMain" alt="Glowing Skin Tips" class="blog-image">
+        <div class="blog-content">
+          <h3>Top 5 Tips for Glowing Skin</h3>
+          <p>Get our expert advice on maintaining healthy, radiant skin all year round using natural routines and Glow Beau favorites.</p>
+        </div>
+        <div class="read-more">
+          <a href="https://www.lorealparis.co.in/beauty-magazine/skin-care-blogs/5-tips-for-glowing-skin--even-skin-tone">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <img src="https://api.deepai.org/job-view-file/2f257001-b35c-43f3-8ea3-26dc8f2b6169/outputs/output.jpg" alt="Behind the Brand" class="blog-image">
+        <div class="blog-content">
+          <h3>Behind the Brand: The Glow Beau Story</h3>
+          <p>Learn how Glow Beau began and the passion behind our cruelty-free, skin-loving beauty products.</p>
+        </div>
+        <div class="read-more">
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-card">
+        <img src="https://nicestyles.ca/wp-content/uploads/2017/11/Winter-Skin-Care-Routine-1.jpg" alt="Winter Skincare" class="blog-image">
+        <div class="blog-content">
+          <h3>Winter Skincare Routine Essentials</h3>
+          <p>Discover the must-have Glow Beau products and steps for protecting</p>
+          <div class="read-more">
+          <a href="https://plumgoodness.com/blogs/skincare/winter-skin-care-for-all-skin-types?srsltid=AfmBOoqi3-l20jWihJuEsQnzVqUtOIwWupsghBh8fg_l1PHFWyV2ShUf">Read More →</a>
+        </div>

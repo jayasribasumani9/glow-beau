@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product List</title>
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+    }
+    .product-image {
+      width: 100%;
+      height: auto;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    button.add-to-cart {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #searchInput {
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Shop Our Products</h1>
+  <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for products..." />
+
+  <div class="product-grid" id="productGrid">
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51tE5z-Xk9L._AC_UF1000,1000_QL80_.jpg" alt="Underarm Roll-On" class="product-image">
+      <div class="product-info">
+        <h3>Chemist at Play Underarm Female Roll-On</h3>
+        <p class="price">₹299.00 <del>₹329.00</del></p>
+        <button class="add-to-cart"
+          data-id="5"
+          data-name="Chemist at Play Underarm Female Roll-On"
+          data-image="https://m.media-amazon.com/images/I/51tE5z-Xk9L._AC_UF1000,1000_QL80_.jpg"
+          data-price="299.00">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i5.walmartimages.com/asr/81c96531-23db-4e08-b7fc-d1dce5a3a63b.03929fa8c8867193d21ca1167ded3f86.png" alt="Cetaphil Cleanser" class="product-image">
+      <div class="product-info">
+        <h3>Cetaphil Gentle Skin Cleanser</h3>
+        <p class="price">₹399.00 <del>₹499.00</del></p>
+        <button class="add-to-cart"
+          data-id="6"
+          data-name="Cetaphil Gentle Skin Cleanser"
+          data-image="https://i5.walmartimages.com/asr/81c96531-23db-4e08-b7fc-d1dce5a3a63b.03929fa8c8867193d21ca1167ded3f86.png"
+          data-price="399.00">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://cdn11.bigcommerce.com/s-gud7r2x2lu/product_images/uploaded_images/olay-regenerist-retinol-24-family-5994.jpg" alt="Olay Retinol24" class="product-image">
+      <div class="product-info">
+        <h3>Olay Retinol24 Night Moisturizer</h3>
+        <p class="price">₹699.00 <del>₹999.00</del></p>
+        <button class="add-to-cart"
+          data-id="7"
+          data-name="Olay Retinol24 Night Moisturizer"
+          data-image="https://cdn11.bigcommerce.com/s-gud7r2x2lu/product_images/uploaded_images/olay-regenerist-retinol-24-family-5994.jpg"
+          data-price="699.00">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/OIP.k-yb7ZEIluneHXdN2LlzcgHaHa?rs=1&pid=ImgDetMain" alt="Beauty & Planet Combo" class="product-image">
+      <div class="product-info">
+        <h3>Love Beauty & Planet Anti Frizz Combo</h3>
+        <p class="price">₹991.00 <del>₹1569.00</del></p>
+        <button class="add-to-cart"
+          data-id="8"
+          data-name="Love Beauty & Planet Anti Frizz Combo"
+          data-image="https://th.bing.com/th/id/OIP.k-yb7ZEIluneHXdN2LlzcgHaHa?rs=1&pid=ImgDetMain"
+          data-price="991.00">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="shop-container">
+      <div class="product-grid">
+    
+        <div class="product-card">
+          <img src="https://cdn11.bigcommerce.com/s-gud7r2x2lu/product_images/uploaded_images/olay-regenerist-retinol-24-family-5994.jpg" alt="Olay Moisturizer" class="product-image">
+          <div class="product-info">
+            <h3>Olay Retinol24 Fragrance-Free Night Moisturizer</h3>
+            <p class="price">₹699.00 <del>₹999.00</del></p>
+            <button class="add-to-cart"
+              data-id="1"
+              data-name="Olay Retinol24 Fragrance-Free Night Moisturizer"
+              data-image="https://cdn11.bigcommerce.com/s-gud7r2x2lu/product_images/uploaded_images/olay-regenerist-retinol-24-family-5994.jpg"
+              data-price="699.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://i5.walmartimages.com/asr/81c96531-23db-4e08-b7fc-d1dce5a3a63b.03929fa8c8867193d21ca1167ded3f86.png" alt="Cetaphil Cleanser" class="product-image">
+          <div class="product-info">
+            <h3>Cetaphil Gentle Skin Cleanser Dry & Sensitive Skin 473ml</h3>
+            <p class="price">₹399.00 <del>₹499.00</del></p>
+            <button class="add-to-cart"
+              data-id="2"
+              data-name="Cetaphil Gentle Skin Cleanser"
+              data-image="https://i5.walmartimages.com/asr/81c96531-23db-4e08-b7fc-d1dce5a3a63b.03929fa8c8867193d21ca1167ded3f86.png"
+              data-price="399.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://th.bing.com/th/id/OIP.k-yb7ZEIluneHXdN2LlzcgHaHa?rs=1&pid=ImgDetMain" alt="Anti Frizz Combo" class="product-image">
+          <div class="product-info">
+            <h3>Love Beauty & Planet Anti Frizz Combo</h3>
+            <p class="price">₹991.00 <del>₹1569.00</del></p>
+            <button class="add-to-cart"
+              data-id="3"
+              data-name="Love Beauty & Planet Anti Frizz Combo"
+              data-image="https://th.bing.com/th/id/OIP.k-yb7ZEIluneHXdN2LlzcgHaHa?rs=1&pid=ImgDetMain"
+              data-price="991.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://www.drsheths.com/cdn/shop/products/Haldi-_-Hyaluronic-Acid-Sunscreen-1.jpg?v=1665754754" alt="Haldi Sunscreen" class="product-image">
+          <div class="product-info">
+            <h3>Haldi & Hyaluronic Acid Sunscreen - 50gm</h3>
+            <p class="price">₹429.00 <del>₹540.00</del></p>
+            <button class="add-to-cart"
+              data-id="4"
+              data-name="Haldi & Hyaluronic Acid Sunscreen"
+              data-image="https://www.drsheths.com/cdn/shop/products/Haldi-_-Hyaluronic-Acid-Sunscreen-1.jpg?v=1665754754"
+              data-price="429.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://static.sweetcare.com/img/prd/488/v-638200520067014888/cerave-007777ve_02.webp" alt="CeraVe Cream" class="product-image">
+          <div class="product-info">
+            <h3>CeraVe Moisturizing Cream for Face and Body</h3>
+            <p class="price">₹399.00 <del>₹429.00</del></p>
+            <button class="add-to-cart"
+              data-id="5"
+              data-name="CeraVe Moisturizing Cream"
+              data-image="https://static.sweetcare.com/img/prd/488/v-638200520067014888/cerave-007777ve_02.webp"
+              data-price="399.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://beautybaskets.in/wp-content/uploads/2021/03/Neutrogena-Oil-Free-Acne-Face-Wash-269Ml-scaled.jpg" alt="Neutrogena Wash" class="product-image">
+          <div class="product-info">
+            <h3>Neutrogena Oil-Free Acne Wash 269ml</h3>
+            <p class="price">₹975.00 <del>₹999.00</del></p>
+            <button class="add-to-cart"
+              data-id="6"
+              data-name="Neutrogena Oil-Free Acne Wash"
+              data-image="https://beautybaskets.in/wp-content/uploads/2021/03/Neutrogena-Oil-Free-Acne-Face-Wash-269Ml-scaled.jpg"
+              data-price="975.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://static.wixstatic.com/media/ddb95a_6427243fb200449f82149dea8f46c549~mv2.jpg" alt="Streax Serum" class="product-image">
+          <div class="product-info">
+            <h3>STREAX HAIR SERUM 25ml</h3>
+            <p class="price">₹199.00 <del>₹236.00</del></p>
+            <button class="add-to-cart"
+              data-id="7"
+              data-name="STREAX HAIR SERUM 25ml"
+              data-image="https://static.wixstatic.com/media/ddb95a_6427243fb200449f82149dea8f46c549~mv2.jpg"
+              data-price="199.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/322296319/WV/FJ/OH/10907102/mp-500x500.jpg" alt="Neutrogena Sunscreen" class="product-image">
+          <div class="product-info">
+            <h3>Neutrogena Sunscreen SPF 50+ - 80g</h3>
+            <p class="price">₹499.00 <del>₹550.00</del></p>
+            <button class="add-to-cart"
+              data-id="8"
+              data-name="Neutrogena Sunscreen SPF 50+"
+              data-image="https://5.imimg.com/data5/SELLER/Default/2023/7/322296319/WV/FJ/OH/10907102/mp-500x500.jpg"
+              data-price="499.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://www.drsheths.com/cdn/shop/products/Image.jpg?v=1668337489" alt="Dr. Sheth's Serum" class="product-image">
+          <div class="product-info">
+            <h3>Dr.Sheth's Centella & Niacinamide Serum - 30ml</h3>
+            <p class="price">₹443.00 <del>₹550.00</del></p>
+            <button class="add-to-cart"
+              data-id="9"
+              data-name="Dr.Sheth's Centella & Niacinamide Serum"
+              data-image="https://www.drsheths.com/cdn/shop/products/Image.jpg?v=1668337489"
+              data-price="443.00">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+    
+        <div class="product-card">
+          <img src="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg" alt="Plum Vitamin C Serum" class="product-image">
+          <div class="product-info">
+            <h3>Plum VitC Radiant Glow Serum</h3>
+            <p class="price">₹499.00 <del>₹550.00</del></p>
+            <button class="add-to-cart"
+              data-id="21"
+              data-name="Plum VitC Radiant Glow Serum"
+              data-image="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg"
+              data-price="499.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600" alt="Onion Hair Serum" class="product-image">
+          <div class="product-info">
+            <h3>Onion Hair Serum for Frizz-Free Hair with Onion and Biotin</h3>
+            <p class="price">₹199.00 <del>₹245.00</del></p>
+            <button class="add-to-cart"
+              data-id="22"
+              data-name="Onion Hair Serum for Frizz-Free Hair"
+              data-image="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600"
+              data-price="199.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/40171048_2-neutrogena-sheer-zinc-dry-touch-sunscreen-spf50.jpg" alt="Neutrogena Sheer Zinc" class="product-image">
+          <div class="product-info">
+            <h3>Neutrogena Sheer Zinc Dry Touch Sunscreen SPF50+</h3>
+            <p class="price">₹399.00 <del>₹425.00</del></p>
+            <button class="add-to-cart"
+              data-id="23"
+              data-name="Neutrogena Sheer Zinc Sunscreen"
+              data-image="https://www.bigbasket.com/media/uploads/p/l/40171048_2-neutrogena-sheer-zinc-dry-touch-sunscreen-spf50.jpg"
+              data-price="399.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://suspire.in/cdn/shop/files/hair_growth_serum.png?v=1719909814" alt="Hair Growth Serum" class="product-image">
+          <div class="product-info">
+            <h3>Natural Infusions Hair Growth Serum (50ml)</h3>
+            <p class="price">₹499.00 <del>₹654.00</del></p>
+            <button class="add-to-cart"
+              data-id="24"
+              data-name="Natural Infusions Hair Growth Serum"
+              data-image="https://suspire.in/cdn/shop/files/hair_growth_serum.png?v=1719909814"
+              data-price="499.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/1/2/12f9e2aPLUMX00000571_01.jpg?tr=w-500" alt="Plum Hair Serum" class="product-image">
+          <div class="product-info">
+            <h3>Plum Coconut Nutri-Shine Hair Serum For Smooth, Shiny Hair</h3>
+            <p class="price">₹399.00 <del>₹699.00</del></p>
+            <button class="add-to-cart"
+              data-id="25"
+              data-name="Plum Coconut Nutri-Shine Hair Serum"
+              data-image="https://images-static.nykaa.com/media/catalog/product/1/2/12f9e2aPLUMX00000571_01.jpg?tr=w-500"
+              data-price="399.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://duckduckbaby.in/cdn/shop/files/DDB12976_1_08d7a03e-f77b-4571-897b-8e600c6a5a3d.jpg?v=1730722316" alt="Multi Peptides Serum" class="product-image">
+          <div class="product-info">
+            <h3>Multi Peptides Anti Aging Serum - 7% Matrixyl 3000</h3>
+            <p class="price">₹664.00 <del>₹850.00</del></p>
+            <button class="add-to-cart"
+              data-id="26"
+              data-name="Multi Peptides Anti Aging Serum"
+              data-image="https://duckduckbaby.in/cdn/shop/files/DDB12976_1_08d7a03e-f77b-4571-897b-8e600c6a5a3d.jpg?v=1730722316"
+              data-price="664.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://viccolabs.com/cdn/shop/collections/skin-banner_47b6810b-f3e9-4447-98a8-0100da42eb19.png?v=1735561692" alt="Vicco Turmeric" class="product-image">
+          <div class="product-info">
+            <h3>Vicco Turmeric Skin Cream, Lotions & Face Wash</h3>
+            <p class="price">₹199.00 <del>₹399.00</del></p>
+            <button class="add-to-cart"
+              data-id="27"
+              data-name="Vicco Turmeric Skin Care Set"
+              data-image="https://viccolabs.com/cdn/shop/collections/skin-banner_47b6810b-f3e9-4447-98a8-0100da42eb19.png?v=1735561692"
+              data-price="199.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://mpatikahu-2d13.kxcdn.com/wp-content/uploads/2018/12/neutrogena-hydro-boost-hidratalo-gel-50ml.jpg" alt="Hydro Boost Gel" class="product-image">
+          <div class="product-info">
+            <h3>Neutrogena Hydro Boost hidratáló gél (50ml)</h3>
+            <p class="price">₹699.00 <del>₹789.00</del></p>
+            <button class="add-to-cart"
+              data-id="28"
+              data-name="Neutrogena Hydro Boost Gel"
+              data-image="https://mpatikahu-2d13.kxcdn.com/wp-content/uploads/2018/12/neutrogena-hydro-boost-hidratalo-gel-50ml.jpg"
+              data-price="699.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14669014/2023/9/6/12adc15e-a720-48e0-a32e-4292b4f694431693992394603-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-181169-1.jpg" alt="Minimalist Face Wash" class="product-image">
+          <div class="product-info">
+            <h3>Minimalist 2% Salicylic Acid Face Wash With LHA - 100 ml</h3>
+            <p class="price">₹299.00 <del>₹350.00</del></p>
+            <button class="add-to-cart"
+              data-id="29"
+              data-name="Minimalist Salicylic Acid Face Wash"
+              data-image="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14669014/2023/9/6/12adc15e-a720-48e0-a32e-4292b4f694431693992394603-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-181169-1.jpg"
+              data-price="299.00">Add to Cart</button>
+          </div>
+        </div>
+        
+        
+    
+
+        </div>
+
+  <script>
+    function searchProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const products = document.querySelectorAll(".product-card");
+
+      products.forEach(product => {
+        const title = product.querySelector("h3").textContent.toLowerCase();
+        product.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+
+    document.body.addEventListener('click', function (e) {
+      if (e.target.classList.contains('add-to-cart')) {
+        e.preventDefault();
+        const btn = e.target;
+        const id = btn.dataset.id;
+        const name = btn.dataset.name;
+        const image = btn.dataset.image;
+        const price = parseFloat(btn.dataset.price);
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        let existing = cart.find(item => item.id === id);
+        if (existing) {
+          existing.quantity += 1;
+        } else {
+          cart.push({ id, name, image, price, quantity: 1 });
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.href = 'basket.html';
+      }
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Glow Beau. All rights reserved. | <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="about.html">About</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcccb;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.03);
+        }
+        .product img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .product-content {
+            padding: 20px;
+        }
+        .product-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #d6336c;
+        }
+        .product-content p {
+            margin: 0 0 10px;
+            font-size: 0.95rem;
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+        .discount {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <p>Protect your skin with these dermatologist-recommended sunscreens</p>
+    </header>
+
+
+    <div style="text-align: center; margin-top: 20px;">
+        <input type="text" id="searchInput" placeholder="Search for sunscreen..." style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        <button onclick="searchProducts()" style="padding: 10px 20px; margin-left: 10px; background-color: #ff7f7f; color: white; border: none; border-radius: 5px; cursor: pointer;">Search</button>
+    </div>
+
+
+
+    <script>
+        function searchProducts() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+                const name = product.querySelector("h3").textContent.toLowerCase();
+                product.style.display = name.includes(input) ? "block" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+    <section class="product-list">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/3/c/3c8aabc86800687900_02.jpg?tr=w-500" alt="Neutrogena Ultra Sheer Dry Touch Sunblock">
+            <div class="product-content">
+                <h3>Neutrogena Ultra Sheer Dry Touch Sunblock SPF 50+</h3>
+                <p>Lightweight, non-greasy sunscreen with a matte finish. Great for daily wear.</p>
+                <p class="price">₹577.20</p>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71fvWt9q7sL.jpg" alt="Olay Natural White 7 in 1 Instant Glowing Fairness Cream">
+            <div class="product-content">
+                <h3>Olay Natural White 7 in 1 Instant Glowing Fairness Cream SPF 24</h3>
+                <p>Provides instant glow and fairness with sun protection.</p>
+                <p class="price">₹145.00</p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="https://luxebykan.com/cdn/shop/files/IMG-5049.png?v=1740137785" alt="Saie Slip Tint Dewy Tinted Moisturizer">
+            <div class="product-content">
+                <h3>Saie Slip Tint Dewy Tinted Moisturizer SPF 35</h3>
+                <p>Hydrating tinted moisturizer with sun protection and a dewy finish.</p>
+                <p class="price">₹3,750.00</p>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/41XGBOYt+-L.jpg" alt="Plum 2% Niacinamide Sunscreen SPF 50 PA+++ With Rice Water">
+            <div class="product-content">
+                <h3>Plum 2% Niacinamide Sunscreen SPF 50 PA+++ With Rice Water</h3>
+                <p>Brightening sunscreen with niacinamide and rice water for even skin tone.</p>
+                <p class="price">₹638.00</p>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="https://d2p5rd30inmhrb.cloudfront.net/m2/media/catalog/product/m/a/matte_look_sunscreen_1_13.jpg" alt="VLCC Matte Look SPF 30 Sun Screen Gel Creme">
+            <div class="product-content">
+                <h3>VLCC Matte Look SPF 30 Sun Screen Gel Creme</h3>
+                <p>Non-oily sunscreen gel that provides a matte finish.</p>
+                <p class="price">₹168</p>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61vD0OqtK2L.jpg" alt="Himalaya Sun Protect+ Ultra Light Sunscreen">
+            <div class="product-content">
+                <h3>Himalaya Sun Protect+ Ultra Light Sunscreen SPF 50</h3>
+                <p>Lightweight sunscreen with broad-spectrum protection.</p>
+                <p class="price">₹237</p>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61bWxOIda-L.jpg" alt="EltaMD UV Clear Facial Sunscreen SPF 46">
+            <div class="product-content">
+                <h3>EltaMD UV Clear Facial Sunscreen SPF 46</h3>
+                <p>Ideal for sensitive and acne-prone skin, offering broad-spectrum protection.</p>
+                <p class="price">₹4,619</p>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="https://joypersonalcare.com/cdn/shop/files/AlldayactiveultramattedrytouchsunscreenwithSPF50PA_F.jpg?v=1704269148" alt="Joy Ultra Matte Dry Touch Sunscreen SPF 50 PA++++">
+            <div class="product-content">
+                <h3>Joy Ultra Matte Dry Touch Sunscreen SPF 50 PA++++</h3>
+                <p>Provides high SPF protection with a dry-touch matte finish.</p>
+                <p class="price">₹299</p>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="https://images.mamaearth.in/catalog/product/1/_/1_46.jpg?format=auto&height=600" alt="Mamaearth Ultra Light Indian Sunscreen SPF 50">
+            <div class="product-content">
+                <h3>Mamaearth Ultra Light Indian Sunscreen SPF 50</h3>
+                <p>Formulated for Indian skin tones, offering high SPF protection.</p>
+                
+
+ 

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | Glow Beau</title>
+  <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff7f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffe0e5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #e91e63;
+    }
+
+    .shop-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      margin: 0.5rem 0;
+      color: #e91e63;
+    }
+
+    .price {
+      color: #555;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #ffd1dc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+
+      
+    }
+
+    .add-to-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+
+<style>
+
+    .search-container {
+  display: flex;             /* Make the container a flex container */
+  justify-content: center;   /* Horizontally center items */
+  align-items: center;       /* Vertically center items */
+  margin: 20px 0;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-left: none;         /* No border between input and button */
+  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+  cursor: pointer;
+}
+
+  #searchInput {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.search-button {
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+  .search-button i {
+    font-size: 16px;
+  }
+
+  .product-card {
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+
+
+
+  </style>
+</head>
+<body>
+    
+
+  <header>
+    <h1>Glow Beau Shop</h1>
+    <p>Discover products that love your skin as much as you do</p>
+  </header>
+
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- 🔍 Search Bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" />
+    <button class="search-button"><i class="fas fa-search">Search</i></button>
+  </div>
+
+ 
+ 
+
+</body>
+</html>
+  
+</div>
+
+
+
+
+  <div class="shop-container">
+    <div class="product-grid"><div class="product-card">
+        <img src="https://cdn11.bigcommerce.com/s-gud7r2x2lu/product_images/uploaded_images/olay-regenerist-retinol-24-family-5994.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Olay Retinol24 Fragance free Night Misturizer</h3>
+          <p class="price">₹699.00 <del>₹999.00</del></p>
+          <a href="basket.html" class="add-to-cart">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i5.walmartimages.com/asr/81c96531-23db-4e08-b7fc-d1dce5a3a63b.03929fa8c8867193d21ca1167ded3f86.png" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Cetaphil Gentle Skin Cleanser Dry&Sensitive Skin 473ml</h3>
+          <p class="price">₹399.00 <del>₹499.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.k-yb7ZEIluneHXdN2LlzcgHaHa?rs=1&pid=ImgDetMain" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Love Beauty & Planet Anti Frizz Combo</h3>
+          <p class="price">₹991.00 <del>₹1569.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.drsheths.com/cdn/shop/products/Haldi-_-Hyaluronic-Acid-Sunscreen-1.jpg?v=1665754754" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Haldi & Hyaluronic Acid Sunscreen - 50gm</h3>
+          <p class="price">₹429.00 <del>₹540.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <img src="https://static.sweetcare.com/img/prd/488/v-638200520067014888/cerave-007777ve_02.webp" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>CeraVe Moisturizing Cream for Face and Body</h3>
+          <p class="price">₹399.00 <del>₹429.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://beautybaskets.in/wp-content/uploads/2021/03/Neutrogena-Oil-Free-Acne-Face-Wash-269Ml-scaled.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena, Oil-Free Acne Wash, 9.1 fl oz (269 ml)</h3>
+          <p class="price">₹975.00 <del>₹999.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://static.wixstatic.com/media/ddb95a_6427243fb200449f82149dea8f46c549~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ddb95a_6427243fb200449f82149dea8f46c549~mv2.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>STREAX HAIR SERUM 25ml</h3>
+          <p class="price">₹199.00 <del>₹236.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/322296319/WV/FJ/OH/10907102/mp-500x500.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Sunscreen SPF 50+ - 80.0 grams Oil, Packaging Size: 75 mL</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.drsheths.com/cdn/shop/products/Image.jpg?v=1668337489" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Dr.Sheth's Centella & Niacinamide Serum - 30ml</h3>
+          <p class="price">₹443.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://rukminim2.flixcart.com/image/850/1250/xif0q/skin-treatment/j/w/n/-original-imah7m372ytnsgup.jpeg?q=90&crop=false" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Pilgrim Retinol & Hyaluronic Acid 1% Lift & Firm Serum for Anti Ageing </h3>
+          <p class="price">₹299.00 <del>₹356.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Plum VitC Radiant Glow Serum</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Onion Hair Serum for Frizz-Free Hair with Onion and Biotin</h3>
+          <p class="price">₹199.00 <del>₹245.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.bigbasket.com/media/uploads/p/l/40171048_2-neutrogena-sheer-zinc-dry-touch-sunscreen-spf50.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Sheer Zinc Dry Touch Sunscreen SPF50+ </h3>
+          <p class="price">₹399.00 <del>₹425.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://suspire.in/cdn/shop/files/hair_growth_serum.png?v=1719909814" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Natural Infusions Hair Growth Serum (50ml) | Redensyl, Anagain, Rosemary, Procapil</h3>
+          <p class="price">₹499.00 <del>₹654.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/1/2/12f9e2aPLUMX00000571_01.jpg?tr=w-500" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Plum Coconut Nutri-Shine Hair Serum For Smooth, Shiny Hair</h3>
+          <p class="price">₹399.00 <del>₹699.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://duckduckbaby.in/cdn/shop/files/DDB12976_1_08d7a03e-f77b-4571-897b-8e600c6a5a3d.jpg?v=1730722316" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Multi Peptides for Anti Aging & Collagen Booster - Face Serum with 7% Matrixyl 3000</h3>
+          <p class="price">₹664.00 <del>₹850.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://viccolabs.com/cdn/shop/collections/skin-banner_47b6810b-f3e9-4447-98a8-0100da42eb19.png?v=1735561692" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Vicco Turmeric Skin Cream, Lotions & Face Wash </h3>
+          <p class="price">₹199.00 <del>₹399.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://mpatikahu-2d13.kxcdn.com/wp-content/uploads/2018/12/neutrogena-hydro-boost-hidratalo-gel-50ml.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Hydro Boost hidratáló gél (50ml) </h3>
+          <p class="price">₹699.00 <del>₹789.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14669014/2023/9/6/12adc15e-a720-48e0-a32e-4292b4f694431693992394603-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-181169-1.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Minimalist 2% Salicylic Acid Face Wash With LHA - 100 ml</h3>
+          <p class="price">₹299.00 <del>₹350.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.garnier.in/-/media/project/loreal/brand-sites/garnier/apac/in/products/light-complete/vitamin-c-face-serum/vitamin-c-face-serum-50ml/8994993016778-001.jpg?w=1200&rev=98667f5842374740a0090b380a1cb5cc&hash=4AC99B80DE3FC32E5E38E1DBD3882AE9" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Garnier Vitamin C Serum - Buy Best Vitamin C Face Serum</h3>
+          <p class="price">₹549.00 <del>₹659.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.mamaearth.in/catalog/product/1/_/1_45.jpg?format=auto&height=600" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Mamaearth Rice Water Tone Up Face Cream with Rice Water & Niacinamide for Glass Skin - 50 g</h3>
+          <p class="price">₹499.00 <del>₹599.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20230513/dW0c/645e8c7ad55b7d0c63aa8bb1/-473Wx593H-4937171360-multi-MODEL.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>2% Hyaluronic Acid Hydration Super Serum/h3>
+          <p class="price">₹499.00 <del>₹565.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://aqualogica.in/cdn/shop/products/5__1200x1200__2_grande.jpg?v=1701149491" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Aqualogica Detan+ Sunscreen Duo with Dewy Sunscreen 80g + Dewy Sunscreen 50g</h3>
+          <p class="price">₹499.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://kasscare.com/cdn/shop/files/AntiAging.jpg?v=1713964360&width=1024" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Retinol Serum - Advanced Anti-Aging Solution</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://itsskinlab.com/cdn/shop/files/anua-heartleaf-77-soothing-toner-main-2_1024x1024_png.webp?v=1693466891" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>ANUA Heartleaf 77% Soothing Toner</h3>
+          <p class="price">₹399.00 <del>₹690.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://aqualogica.in/cdn/shop/files/1_9f045f26-21c3-443f-a9cc-cff3ef4313af.jpg?v=1719554597" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Aqualogica Illuminate + Hydra Gel Moisturizer(200 g)</h3>
+          <p class="price">₹299.00 <del>₹499.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://skinrocks.com/cdn/shop/articles/Untitled-design-22_2f4ec56f-8a65-45ed-b8e2-a7e6f65ca286.png?v=1715845116" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>CeraVe Hydrating Foaming Oil Cleanser</h3>
+          <p class="price">₹356.00 <del>₹425.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2025/MARCH/20/lkGvjcZa_973091763ae04ae2a3c3f87cc825a6a3.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Lakme Tinted Sunscreen SPF 50 PA +++ with UVA/B Protection - 50 ml</h3>
+          <p class="price">₹399.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.mamaearth.in/catalog/product/v/i/vitamin_c_foaming_face_wash_2.jpeg?format=auto&height=600" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Vitamin C Foaming Face Wash with Vitamin C and Turmeric for Skin Illumination - 150ml</h3>
+          <p class="price">₹299.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1632126429_plum-green-tea-alcohol.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Green Tea Alcohol-Free Face Toner</h3>
+          <p class="price">₹149.00 <del>₹199.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.ebayimg.com/images/g/W6UAAOSwiQ9ZXXWh/s-l400.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Mamonde Rose Water Toner 150 ml 5.1 Oz Recover and Hydrating 90.89 % Damask Rose</h3>
+          <p class="price">₹249.00 <del>₹374.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_2ziZnqgDtU-d0nqmr37y2W0qL-WQJRh-Nly5_orJc7vLhS6A5ngZIBuYwZ--FFLXas&usqp=CAU" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Vaseline Intensive Care Body Lotion(Cocoa Radiant-400ml)</h3>
+          <p class="price">₹399.00 <del>₹599.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.fixderma.com/cdn/shop/files/Shadow_50_gel_75g_grande.webp?v=1739536607" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Fixderma Shadow SPF 50+ Gel</h3>
+          <p class="price">₹299.00 <del>₹454.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://ponds.in/cdn/shop/files/27484_S1-8901030997143_900x.jpg?v=1719230132" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Pond's Bright Beauty Anti-Pigmentation Serum with 12% Gluta- Niacinamide Complex (14 ml)</h3>
+          <p class="price">₹199.00 <del>₹245.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.lookfantastic.ae/images?url=https://static.thcdn.com/productimg/original/13657332-3825212082379051.jpg&format=webp&auto=avif" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Cetaphil Healthy Radiance Refresh Toner with Niacinamide 150ml</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://prokare.in/cdn/shop/files/61c9VTSZ7KL._SL1500.jpg?v=1701942882" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>CeraVe Acne Control Cleanser 237ml</h3>
+          <p class="price">₹299.00 <del>₹429.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images-cdn.ubuy.co.in/6510295e5878e44d973e5229-neutrogena-alcohol-free-daily-facial.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Alcohol-Free Facial Toner for Fragrance-Free Skincare, 8 oz</h3>
+          <p class="price">₹499.00 <del>₹599.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/original/1013648/8Kus_3ZIO-8901030860461_1.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Pond's Pure Detox Anti Pollution Purity Face Wash with Activated Charcoal</h3>
+          <p class="price">₹400.00 <del>₹449.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://innovist.com/cdn/shop/files/First-images-guidelinesBody-Lotion-1_17852866-7d22-41a7-9ee2-bf13f7baa08c.png?v=1721910831&width=900" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Chemist At Play Exfoliating Body Wash 236 Ml</h3>
+          <p class="price">₹339.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.true.co.ke/cdn/shop/products/Garnier-SkinActive-Pure-Active-Daily-Pore-Reducing-Toner-200ml_1024x1024.jpg?v=1635945672" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Garnier SkinActive Pure Active Daily Pore Reducing Toner 200ml </h3>
+          <p class="price">₹269.00 <del>₹299.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <img src="https://shreeherbalnilgiris.in/wp-content/uploads/2023/11/2-6.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>SHREE Hair Care Onion Serum - 30ml | Anti-Hair Fall & Strengthening Serum for Healthy Hair</h3>
+          <p class="price">₹499.00 <del>₹669.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/30205332/2024/7/13/c9f3c6e9-18bb-4b60-9ca9-0c35fc4422ef1720845881709FaceScrubandExfoliator1.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Chemist at Play Gentle Exfoliating Face Scrub With Walnut & Rice Milk -100ml</h3>
+          <p class="price">₹279.00 <del>₹329.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/AUGUST/14/IgtzcQz0_4d6090dacc6a4a8e9515b0e4069edeca.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Dot & Key Watermelon AHA Pore Tightening Alcohol Free Toner With Glycolic Acid(150 ml)</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/28636300/2024/4/3/93249233-449e-48ae-a088-278685d999c01712133019259PondsHydraLightHyaluronicAcidFaceCareCombo-FaceSerum14mlFace1.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Ponds Hydra Light Hyaluronic Acid Face Care Combo - Face Serum 14ml & Face Wash 100g</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.apollo247.in/pub/media/catalog/product/C/E/CET0440_1-JULY23_1.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Cetaphil Brightening Day Protection SPF 15 Cream, 50 gm </h3>
+          <p class="price">₹299.00 <del>₹349.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://innovist.com/cdn/shop/files/FirstImage_d09e6182-bff6-4581-bc80-13922494419a.png?v=1741240756&width=900" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Chemist at paly 2% Salcylic Acid with 1% Zinc PAC Serum</h3>
+          <p class="price">₹499.00 <del>₹599.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://sohaticare.com/cdn/shop/files/DPOC_Toner.png?v=1719490512" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Eucerin DermoPurifyer Oil Control Toner 200 ml</h3>
+          <p class="price">₹699.00 <del>₹999.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnpKQj0jPddsgfLgCYNJHqT-veC9SgViV7bQ&s" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>L'Oreal Paris LOreal Paris Elvive Smoothing Shampoo, 12.6 Fl oz</h3>
+          <p class="price">₹2499.00 <del>₹3049.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/b/1/b13841cEUCER00000001.jpg?tr=w-500" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Eucerin Oil Control Dry Touch Sunscreen Gel-Cream SPF 50+ </h3>
+          <p class="price">₹499.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://static.beautytocare.com/cdn-cgi/image/width=1600,height=1600,f=auto/media/catalog/product//t/r/tresemme-revitalise-colour-conditioner-900ml.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">TRESemmé Revital4ise Color Conditioner 900ml Plum VitC Radiant Glow Serum</h3>
+          <p class="price">₹399.00 <del>₹5.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.cureka.com/wp-content/uploads/2021/08/Layer_39-3.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Cetaphil Brightening Night Comfort Cream - 50 g | For Dark Spots, Uneven Skin Tone</h3>
+          <p class="price">₹399.00 <del>₹549.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.keratinshampooindia.com/wp-content/uploads/2020/11/Expert-A-Ox-Vitamino-Color-Shampoo-300ml-with-Masque.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>LOreal Paris Serie Expert A-Ox Vitamino Color Shampoo 300ml with Masque 250 ml </h3>
+          <p class="price">₹399.00 <del>₹559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.bigbasket.com/media/uploads/p/xl/40265446-8_2-dot-key-dot-key-pollution-acne-defense-green-clay-mask-85gm.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Dot & Key Skin Care Pollution + Acne Defense Green Clay Mask (85 g)</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/b/1/b13841cEUCER00000007.jpg?tr=w-500" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Eucerin Anti-Pigment Dual Serum With Thiamidol & Hyaluronic Acid , Reduces Dark Spots & Rejuvenates</h3>
+          <p class="price">₹3499.00 <del>₹4559.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjtCUzW2DNn41P1xsQSkY5So-TbHlJpSuZg&s">
+        <div class="product-info">
+          <h3>Anomaly Haircare Clarifying Shampoo with Charcoal and Eucalyptus for Build Up 11 fl oz</h3>
+          <p class="price">₹499.00 <del>₹699.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://rukminim3.flixcart.com/image/850/1000/xif0q/hair-serum/x/g/3/-original-imah83zbkebawcyg.jpeg?q=90&crop=false" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>L'Oréal Paris Extraordinary Oil Hair Serum with Precious Oils For Dry & Frizzy Hair</h3>
+          <p class="price">₹376.00 <del>₹549.00</del></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/51tE5z-Xk9L._AC_UF1000,1000_QL80_.jpg" alt="Glow Serum" class="product-image">
+        <div class="product-info">
+          <h3>Chemist at Play Underarm Female Roll-On With 5% AHA, Lactic Acid & 1% Mandelic Acid 40Ml</h3>
+          <p class="price">₹299.00 <del>₹329.00</del></p>
+          <button class="add-to-cart"
+            data-id="5"
+            data-name="Chemist at Play Underarm Female Roll-On"
+            data-image="https://m.media-amazon.com/images/I/51tE5z-Xk9L._AC_UF1000,1000_QL80_.jpg"
+            data-price="299.00">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg" alt="Plum Vitamin C Serum" class="product-image">
+        <div class="product-info">
+          <h3>Plum VitC Radiant Glow Serum</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart"
+            data-id="21"
+            data-name="Plum VitC Radiant Glow Serum"
+            data-image="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg"
+            data-price="499.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600" alt="Onion Hair Serum" class="product-image">
+        <div class="product-info">
+          <h3>Onion Hair Serum for Frizz-Free Hair with Onion and Biotin</h3>
+          <p class="price">₹199.00 <del>₹245.00</del></p>
+          <button class="add-to-cart"
+            data-id="22"
+            data-name="Onion Hair Serum for Frizz-Free Hair"
+            data-image="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600"
+            data-price="199.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg" alt="Plum Vitamin C Serum" class="product-image">
+        <div class="product-info">
+          <h3>Plum VitC Radiant Glow Serum</h3>
+          <p class="price">₹499.00 <del>₹550.00</del></p>
+          <button class="add-to-cart"
+            data-id="21"
+            data-name="Plum VitC Radiant Glow Serum"
+            data-image="https://beautycaters.com/wp-content/uploads/2021/03/Plum-Vitamin-C-Face-Serum.jpg"
+            data-price="499.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600" alt="Onion Hair Serum" class="product-image">
+        <div class="product-info">
+          <h3>Onion Hair Serum for Frizz-Free Hair with Onion and Biotin</h3>
+          <p class="price">₹199.00 <del>₹245.00</del></p>
+          <button class="add-to-cart"
+            data-id="22"
+            data-name="Onion Hair Serum for Frizz-Free Hair"
+            data-image="https://images.mamaearth.in/catalog/product/o/n/onion-hair-serum1200x1200_ad8hgvjdve7vcczs.jpg?format=auto&height=600"
+            data-price="199.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://www.bigbasket.com/media/uploads/p/l/40171048_2-neutrogena-sheer-zinc-dry-touch-sunscreen-spf50.jpg" alt="Neutrogena Sheer Zinc" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Sheer Zinc Dry Touch Sunscreen SPF50+</h3>
+          <p class="price">₹399.00 <del>₹425.00</del></p>
+          <button class="add-to-cart"
+            data-id="23"
+            data-name="Neutrogena Sheer Zinc Sunscreen"
+            data-image="https://www.bigbasket.com/media/uploads/p/l/40171048_2-neutrogena-sheer-zinc-dry-touch-sunscreen-spf50.jpg"
+            data-price="399.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://suspire.in/cdn/shop/files/hair_growth_serum.png?v=1719909814" alt="Hair Growth Serum" class="product-image">
+        <div class="product-info">
+          <h3>Natural Infusions Hair Growth Serum (50ml)</h3>
+          <p class="price">₹499.00 <del>₹654.00</del></p>
+          <button class="add-to-cart"
+            data-id="24"
+            data-name="Natural Infusions Hair Growth Serum"
+            data-image="https://suspire.in/cdn/shop/files/hair_growth_serum.png?v=1719909814"
+            data-price="499.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/1/2/12f9e2aPLUMX00000571_01.jpg?tr=w-500" alt="Plum Hair Serum" class="product-image">
+        <div class="product-info">
+          <h3>Plum Coconut Nutri-Shine Hair Serum For Smooth, Shiny Hair</h3>
+          <p class="price">₹399.00 <del>₹699.00</del></p>
+          <button class="add-to-cart"
+            data-id="25"
+            data-name="Plum Coconut Nutri-Shine Hair Serum"
+            data-image="https://images-static.nykaa.com/media/catalog/product/1/2/12f9e2aPLUMX00000571_01.jpg?tr=w-500"
+            data-price="399.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://duckduckbaby.in/cdn/shop/files/DDB12976_1_08d7a03e-f77b-4571-897b-8e600c6a5a3d.jpg?v=1730722316" alt="Multi Peptides Serum" class="product-image">
+        <div class="product-info">
+          <h3>Multi Peptides Anti Aging Serum - 7% Matrixyl 3000</h3>
+          <p class="price">₹664.00 <del>₹850.00</del></p>
+          <button class="add-to-cart"
+            data-id="26"
+            data-name="Multi Peptides Anti Aging Serum"
+            data-image="https://duckduckbaby.in/cdn/shop/files/DDB12976_1_08d7a03e-f77b-4571-897b-8e600c6a5a3d.jpg?v=1730722316"
+            data-price="664.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://viccolabs.com/cdn/shop/collections/skin-banner_47b6810b-f3e9-4447-98a8-0100da42eb19.png?v=1735561692" alt="Vicco Turmeric" class="product-image">
+        <div class="product-info">
+          <h3>Vicco Turmeric Skin Cream, Lotions & Face Wash</h3>
+          <p class="price">₹199.00 <del>₹399.00</del></p>
+          <button class="add-to-cart"
+            data-id="27"
+            data-name="Vicco Turmeric Skin Care Set"
+            data-image="https://viccolabs.com/cdn/shop/collections/skin-banner_47b6810b-f3e9-4447-98a8-0100da42eb19.png?v=1735561692"
+            data-price="199.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://mpatikahu-2d13.kxcdn.com/wp-content/uploads/2018/12/neutrogena-hydro-boost-hidratalo-gel-50ml.jpg" alt="Hydro Boost Gel" class="product-image">
+        <div class="product-info">
+          <h3>Neutrogena Hydro Boost hidratáló gél (50ml)</h3>
+          <p class="price">₹699.00 <del>₹789.00</del></p>
+          <button class="add-to-cart"
+            data-id="28"
+            data-name="Neutrogena Hydro Boost Gel"
+            data-image="https://mpatikahu-2d13.kxcdn.com/wp-content/uploads/2018/12/neutrogena-hydro-boost-hidratalo-gel-50ml.jpg"
+            data-price="699.00">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14669014/2023/9/6/12adc15e-a720-48e0-a32e-4292b4f694431693992394603-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-181169-1.jpg" alt="Minimalist Face Wash" class="product-image">
+        <div class="product-info">
+          <h3>Minimalist 2% Salicylic Acid Face Wash With LHA - 100 ml</h3>
+          <p class="price">₹299.00 <del>₹350.00</del></p>
+          <button class="add-to-cart"
+            data-id="29"
+            data-name="Minimalist Salicylic Acid Face Wash"
+            data-image="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14669014/2023/9/6/12adc15e-a720-48e0-a32e-4292b4f694431693992394603-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-181169-1.jpg"
+            data-price="299.00">Add to Cart</button>
+        </div>
+      </div>
+      
+     
+      
+      
+
+    </div>
+  </div>
+
+  <script>
+    function searchProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const products = document.querySelectorAll(".product-card");
+  
+      products.forEach(product => {
+        const title = product.querySelector("h3").textContent.toLowerCase();
+        if (title.includes(input)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    }
+
+  document.body.addEventListener('click', function (e) {
+    if (e.target.classList.contains('add-to-cart')) {
+      e.preventDefault();
+      const btn = e.target;
+      const id = btn.dataset.id;
+      const name = btn.dataset.name;
+      const image = btn.dataset.image;
+      const price = parseFloat(btn.dataset.price);
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      let existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, image, price, quantity: 1 });
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Redirect to basket.html
+      window.location.href = 'basket.html';
+    }
+  });
+
+
+  </script>
+  
+
+  <footer>
+    <p>&copy; 2025 Glow Beau. All rights reserved. | <a href="index.html">Home</a> | <a href="blog.html">Blog</a> | <a href="about.html">About</a></p>
+  </footer>
+
+</body>
+</html>
